@@ -1,6 +1,7 @@
 
 import com.code.main.Sorting;
 import com.code.main.LinkedList;
+import com.code.main.Array;
 
 public class Main{
 
@@ -21,7 +22,15 @@ public class Main{
 		list.addNode(30);
 		list.addNode(40);
 		list.addNode(50);
-		list.printNode();
+//		list.printNode();
+
+
+
+		Array array = new Array();
+		//int[]nums = {5,8,20,10};
+		int[]nums = {40,8,50};
+		int result = array.largestElement.apply(nums);
+		System.out.println(result);
 	}
 
 }
