@@ -29,9 +29,11 @@ public class Main{
 		Array array = new Array();
 		//int[]nums = {5,8,20,10};
 		//int[]nums = {40,8,50};
-		int[]nums = {10,10,10};
+//		int[]nums = {10,10,10};
+		int[] nums = {5,20,12,20,8};
 //		int result = array.largestElement.apply(nums);
-		int result = array.secondLarge.apply(nums);
+		//int result = array.secondLarge.apply(nums);
+		int result = array.secondLargest.apply(nums);
 		System.out.println(result);
 		
 	}
