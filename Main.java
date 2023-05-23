@@ -30,10 +30,15 @@ public class Main{
 		//int[]nums = {5,8,20,10};
 		//int[]nums = {40,8,50};
 //		int[]nums = {10,10,10};
-		int[] nums = {5,20,12,20,8};
+//		int[] nums = {5,20,12,20,8};
 //		int result = array.largestElement.apply(nums);
 		//int result = array.secondLarge.apply(nums);
-		int result = array.secondLargest.apply(nums);
+//		int result = array.secondLargest.apply(nums);
+		//int[] nums = {8,12,15};
+		//int[] nums = {8,10,10,12};
+		//int[] nums = {100};
+		int[] nums = {100,20,200};
+		boolean result = array.isSorted.test(nums);
 		System.out.println(result);
 		
 	}

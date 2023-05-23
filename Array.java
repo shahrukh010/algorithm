@@ -1,5 +1,6 @@
 package com.code.main;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class Array{
 
@@ -59,6 +60,16 @@ public class Array{
 			}
 		}
 		return res != -1 ? input[res] : -1;
+	};
+
+
+	public Predicate<int[]>isSorted = (input)->{
+
+		for(int index = 0; index < input.length-1; index++){
+
+			if(input[index+1] < input[index])return false;
+		}
+		return true;
 	};
 	
 	
