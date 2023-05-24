@@ -162,6 +162,20 @@ public class Array{
 	};
 
 
+	public Function<int[],Integer>maxDiff = (input)->{
+
+		int max_diff = input[1] - input[0];
+		int min = input[0];
+
+		for(int index = 1; index < input.length;index++){
+
+			max_diff = Math.max(input[index] - min,max_diff);
+			min = Math.min(min,input[index]);
+		}
+		return max_diff;
+	};
+
+
 
 	private void swap(int[]input,int low,int high){
 

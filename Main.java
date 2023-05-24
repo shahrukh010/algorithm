@@ -51,9 +51,15 @@ public class Main{
 //		int[] nums = {1,2,3,4,5};
 //		int[] result= array.rotateByD(nums,3);
 
-		int[] nums = {7,10,4,6,5,2};
-		int[] result = array.leader.apply(nums);
-		System.out.println(java.util.Arrays.toString(result));
+//		int[] nums = {7,10,4,6,5,2};
+//		int[] result = array.leader.apply(nums);
+//		int[] nums = {2,3,10,6,4,8,1};
+//		int[] nums = {7,9,5,6,3,2};
+//		int[] nums = {10,20,30};
+		int[] nums = {30,10,8,2};
+		int result = array.maxDiff.apply(nums);
+		System.out.println(result);
+//		System.out.println(java.util.Arrays.toString(result));
 
 		
 	}
