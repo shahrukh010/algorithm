@@ -43,8 +43,11 @@ public class Main{
 //		int[] nums = {1,2,3,4,5};
 //		int[] result = array.reverseArray.apply(nums);
 
-		int[] nums = {10,10,10,20,20,30,30,30,40,50,50,60};
-		int[] result = array.removeDuplicate.apply(nums);
+		//int[] nums = {10,10,10,20,20,30,30,30,40,50,50,60};
+//		int[] nums = {10,10,10};
+//		int[] result = array.removeDuplicate.apply(nums);
+		int[] nums = {8,5,0,10,0,20,0,0,30};
+		int[] result = array.moveZero.apply(nums);
 		System.out.println(java.util.Arrays.toString(result));
 		
 	}

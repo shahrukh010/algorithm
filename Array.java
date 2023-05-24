@@ -103,6 +103,22 @@ public class Array{
 		return java.util.Arrays.copyOfRange(input,0,prev+1);
 	};
 
+	public Function<int[],int[]>moveZero = (input)->{
+
+		int i =0;
+		int j = 0;
+
+		while(j < input.length){
+
+			if(input[j] !=0){
+				swap(input,i,j);
+				i++;
+			}
+			j++;
+		}
+		return input;
+	};
+
 	private void swap(int[]input,int low,int high){
 
 			int tmp = input[low];
