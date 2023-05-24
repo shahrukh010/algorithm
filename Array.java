@@ -1,6 +1,7 @@
 package com.code.main;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Consumer;
 
 public class Array{
 
@@ -118,6 +119,26 @@ public class Array{
 		}
 		return input;
 	};
+
+	private Consumer<int[]>rotate = (input)->{
+
+		int tmp = input[0];
+		for(int index = 0; index < input.length-1; index++){
+
+			input[index] = input[index+1];
+		}
+		input[input.length-1] = tmp;
+
+	};
+
+	public int[] rotateByD(int[] input,int d){
+
+		for(int index = 0; index < d; index++){
+
+			rotate.accept(input);
+		}
+		return input;
+	}
 
 	private void swap(int[]input,int low,int high){
 
