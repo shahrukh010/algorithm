@@ -86,12 +86,30 @@ public class Array{
 		return input;
 	};
 
+	public Function<int[],int[]>removeDuplicate = (input)->{
+
+		int prev = 0;
+		int next = 1;
+
+		while(next < input.length){
+
+			if(input[prev] !=input[next]){
+
+				input[prev +1] = input[next];
+				prev++;
+			}
+			next++;
+		}
+		return java.util.Arrays.copyOfRange(input,0,prev+1);
+	};
+
 	private void swap(int[]input,int low,int high){
 
 			int tmp = input[low];
 			input[low] = input[high];
 			input[high] = tmp;
 	}
+
 	
 
 }

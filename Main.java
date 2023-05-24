@@ -40,8 +40,11 @@ public class Main{
 //		int[] nums = {100,20,200};
 		//boolean result = array.isSorted.test(nums);
 
-		int[] nums = {1,2,3,4,5,6};
-		int[] result = array.reverseArray.apply(nums);
+//		int[] nums = {1,2,3,4,5};
+//		int[] result = array.reverseArray.apply(nums);
+
+		int[] nums = {10,10,10,20,20,30,30,30,40,50,50,60};
+		int[] result = array.removeDuplicate.apply(nums);
 		System.out.println(java.util.Arrays.toString(result));
 		
 	}
