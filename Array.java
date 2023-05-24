@@ -2,6 +2,8 @@ package com.code.main;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Consumer;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Array{
 
@@ -139,6 +141,27 @@ public class Array{
 		}
 		return input;
 	}
+
+	public Function<int[],int[]>leader = (input)->{
+
+		int current_leader = input[input.length-1];
+		List<Integer> res = new ArrayList<>();
+		res.add(current_leader);
+
+		for(int index = input.length-2; index>=0; index--){
+			
+			if(input[index] > current_leader){
+
+				current_leader = input[index];
+				res.add(current_leader);
+			}
+		}
+
+		int[] result = res.stream().mapToInt(Integer::intValue).toArray();
+		return result;
+	};
+
+
 
 	private void swap(int[]input,int low,int high){
 

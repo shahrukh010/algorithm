@@ -48,9 +48,13 @@ public class Main{
 //		int[] result = array.removeDuplicate.apply(nums);
 //		int[] nums = {8,5,0,10,0,20,0,0,30};
 //		int[] result = array.moveZero.apply(nums);
-		int[] nums = {1,2,3,4,5};
-		int[] result= array.rotateByD(nums,3);
+//		int[] nums = {1,2,3,4,5};
+//		int[] result= array.rotateByD(nums,3);
+
+		int[] nums = {7,10,4,6,5,2};
+		int[] result = array.leader.apply(nums);
 		System.out.println(java.util.Arrays.toString(result));
+
 		
 	}
 
