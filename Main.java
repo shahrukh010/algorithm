@@ -37,9 +37,12 @@ public class Main{
 		//int[] nums = {8,12,15};
 		//int[] nums = {8,10,10,12};
 		//int[] nums = {100};
-		int[] nums = {100,20,200};
-		boolean result = array.isSorted.test(nums);
-		System.out.println(result);
+//		int[] nums = {100,20,200};
+		//boolean result = array.isSorted.test(nums);
+
+		int[] nums = {1,2,3,4,5,6};
+		int[] result = array.reverseArray.apply(nums);
+		System.out.println(java.util.Arrays.toString(result));
 		
 	}
 

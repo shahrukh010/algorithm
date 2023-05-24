@@ -71,7 +71,27 @@ public class Array{
 		}
 		return true;
 	};
-	
+
+	public Function<int[],int[]> reverseArray = (input)->{
+
+		int low = 0;
+		int high = input.length-1;
+
+		while(low < high){
+
+			swap(input,low,high);
+			low++;
+			high--;
+		}
+		return input;
+	};
+
+	private void swap(int[]input,int low,int high){
+
+			int tmp = input[low];
+			input[low] = input[high];
+			input[high] = tmp;
+	}
 	
 
 }
