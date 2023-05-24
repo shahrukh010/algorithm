@@ -4,6 +4,7 @@ import java.util.function.Predicate;
 import java.util.function.Consumer;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Array{
 
@@ -173,6 +174,23 @@ public class Array{
 			min = Math.min(min,input[index]);
 		}
 		return max_diff;
+	};
+
+	public Consumer<int[]> frequence = (input)->{
+
+		java.util.Map<Integer,Integer> result = new java.util.HashMap<>();
+		Integer count = 1;
+		
+		for(int index = 0; index < input.length; index++){
+
+			//get()method return null 
+			//getOrDefault()method return if present key value is not 0
+			result.put(input[index],result.getOrDefault(input[index],0)+1);
+		}
+
+		for(Map.Entry<Integer,Integer> m : result.entrySet()){
+			System.out.println(m.getKey()+":"+m.getValue());
+		}
 	};
 
 

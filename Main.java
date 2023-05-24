@@ -56,9 +56,12 @@ public class Main{
 //		int[] nums = {2,3,10,6,4,8,1};
 //		int[] nums = {7,9,5,6,3,2};
 //		int[] nums = {10,20,30};
-		int[] nums = {30,10,8,2};
-		int result = array.maxDiff.apply(nums);
-		System.out.println(result);
+//		int[] nums = {30,10,8,2};
+//		int result = array.maxDiff.apply(nums);
+//		System.out.println(result);
+//
+		int[] nums = {10,10,10,25,30,30};
+		array.frequence.accept(nums);
 //		System.out.println(java.util.Arrays.toString(result));
 
 		
