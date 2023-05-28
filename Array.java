@@ -205,6 +205,29 @@ public class Array{
         return profit;
     };
 
+    public Function<int[],Integer>maxWater = (input)->{
+
+        int result = 0;
+
+        for(int index = 1; index < input.length;index++){
+
+            int leftMax = input[index];
+        for(int lindex = index; lindex >=0; lindex--){
+
+             leftMax = Math.max(input[lindex],leftMax);
+        }
+           int rightMax = input[index];
+
+           for(int rindex = index+1;rindex<input.length;rindex++)
+               rightMax = Math.max(rightMax,input[rindex]);
+
+         result +=(Math.min(leftMax,rightMax))- input[index];
+
+      }
+      return result;
+
+    };
+
 
 
 	private void swap(int[]input,int low,int high){

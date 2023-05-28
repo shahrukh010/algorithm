@@ -64,8 +64,13 @@ public class Main{
 //		array.frequence.accept(nums);
 //		System.out.println(java.util.Arrays.toString(result));
 
-        int[]nums = {1,5,3,8,12};
-        int result = array.maxProfit.apply(nums);
+//        int[]nums = {1,5,3,8,12};
+//        int result = array.maxProfit.apply(nums);
+
+//        int[] nums = {3,0,1,2,5};
+//        int[] nums = {3,0,2,0,4};
+        int[] nums = {2,0,2};
+        int result = array.maxWater.apply(nums);
         System.out.println(result);
 		
 	}
