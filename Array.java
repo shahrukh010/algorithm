@@ -246,6 +246,22 @@ public class Array{
         return result;
     };
 
+    public Function<int[],Integer>maxSumSubArray = (input)->{
+
+        int result = Integer.MIN_VALUE;
+
+        for(int index = 0; index < input.length; index++){
+
+            int currentMax = input[index];
+            for(int j = index+1; j < input.length;j++){
+
+                currentMax = Math.max(currentMax + input[j],input[j]);
+                result = Math.max(currentMax,result);//because maxSumSub can be single element also({-6,-1,-8} in this case -1
+            }
+        }
+        return result;
+    };
+
 
 
 	private void swap(int[]input,int low,int high){

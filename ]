@@ -75,12 +75,10 @@ public class Main{
 //          int[] nums = {1,0,1,1,1,1,0,1,1};
 //          int result = array.consecutive.apply(nums);
 
-//            int[] nums = {2,3,-8,7,-1,2,3};
-//          int[] nums = {5,8,3};
-//          int[] nums = {-6, -1,-8};
-           int[] nums = {1,-2,3,-1,2};
-          int result = array.maxSumSubArray.apply(nums);
+          int[] nums = {2,3,-8,7,-1,2,3};
           
         System.out.println(result);
+		
 	}
+
 }
