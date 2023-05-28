@@ -262,6 +262,20 @@ public class Array{
         return result;
     };
 
+    //efficent solution maxsubarray
+    public Function<int[],Integer> maxSubArraySum = (input)->{
+
+        int currentMax = input[1];
+        int max_so_far = input[0];
+
+        for(int index = 1; index < input.length; index++){
+
+            currentMax = Math.max(currentMax + input[index],input[index]);
+            max_so_far = Math.max(currentMax,max_so_far);
+        }
+        return max_so_far;
+    };
+
 
 
 	private void swap(int[]input,int low,int high){
