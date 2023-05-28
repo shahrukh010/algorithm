@@ -60,10 +60,13 @@ public class Main{
 //		int result = array.maxDiff.apply(nums);
 //		System.out.println(result);
 //
-		int[] nums = {10,10,10,25,30,30};
-		array.frequence.accept(nums);
+//		int[] nums = {10,10,10,25,30,30};
+//		array.frequence.accept(nums);
 //		System.out.println(java.util.Arrays.toString(result));
 
+        int[]nums = {1,5,3,8,12};
+        int result = array.maxProfit.apply(nums);
+        System.out.println(result);
 		
 	}
 

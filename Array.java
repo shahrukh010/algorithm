@@ -194,6 +194,18 @@ public class Array{
 	};
 
 
+    public Function<int[],Integer> maxProfit = (input)->{
+
+        int profit = 0;
+        for(int index = 1; index < input.length-1; index++){
+
+            if(input[index] > input[index-1])
+                profit +=input[index] - input[index-1];
+        }
+        return profit;
+    };
+
+
 
 	private void swap(int[]input,int low,int high){
 
