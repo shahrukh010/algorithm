@@ -228,6 +228,24 @@ public class Array{
 
     };
 
+    public Function<int[],Integer> consecutive = (input)->{
+
+        int result = 0;
+        int count = 0;
+
+        for(int index = 0 ; index < input.length; index++){
+
+            if(input[index] !=0){
+                count++;
+                result = Math.max(result,count);
+            }
+            else
+                count = 0;
+
+        }
+        return result;
+    };
+
 
 
 	private void swap(int[]input,int low,int high){
