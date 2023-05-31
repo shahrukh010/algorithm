@@ -122,7 +122,12 @@ public class Main{
 //        boolean result = array.isSumExists.test(nums,33);
 
         //int result = array.prefixSum.apply(0,2);
-        int result = array.prefixSum.apply(2,6);
+//        int result = array.prefixSum.apply(2,6);
+
+//        int[] nums = {3,4,8,-9,20,6};
+//        int[] nums = {4,2,-2};
+        int[] nums = {4,2,2};
+        boolean result = array.isEqulibrium.test(nums);
         System.out.println(result);
 	}
 }

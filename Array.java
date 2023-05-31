@@ -447,6 +447,7 @@ public class Array{
 
             prefix[index] = nums[index] + prefix[index-1];
         }
+        //we can declare class inside functional interface.
 
          class Sum{
 
@@ -465,6 +466,28 @@ public class Array{
         return result;
   };
 
+    public Predicate<int[]> isEqulibrium = (input)->{
+
+        int[] prefix = new int[input.length];
+        prefix[0] = input[0];
+
+        for(int index = 1; index < input.length; index++){
+
+            prefix[index] = input[index] + prefix[index-1];
+        }
+
+        int total = prefix[input.length-1];
+        int pleft = 0;
+        int ileft = 0;
+
+        for(int index = 0; index<input.length;index++){
+
+            pleft = total - prefix[index];
+            ileft = prefix[index] - input[index];
+            if(pleft == ileft)return true;
+        }
+        return false;
+    };
 
 	private void swap(int[]input,int low,int high){
 
