@@ -383,6 +383,23 @@ public class Array{
         }
         return result;
     };
+    //efficent soln
+    public BiFunction<int[],Integer,Integer> maxConSum = (input,k)->{
+
+                int currentSum = 0;
+            for (int index = 0; index < k; index++) {
+                currentSum += input[index];
+            }
+
+            int result = currentSum;
+
+            for (int index = k; index < input.length; index++) {
+                currentSum = currentSum + input[index] - input[index - k];
+                result = Math.max(currentSum, result);
+            }
+            return result;
+
+    };
 
 
 	private void swap(int[]input,int low,int high){

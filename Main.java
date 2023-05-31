@@ -106,8 +106,12 @@ public class Main{
 
 //        int[]nums = {1,8,30,-5,20,7};
 //        int[] nums = {5,-10,6,90,3};
-        int[] nums = {10,5,-2,20,1};
-        int result = array.maxKConsecutiveSum.apply(nums,3);
+        //int[] nums = {10,5,-2,20,1};
+//        int result = array.maxKConsecutiveSum.apply(nums,3);
+
+//        int[] nums = {1,8,30,-5,20,7};
+        int[]nums = {1,8,30,-5,20,7};
+        int result = array.maxConSum.apply(nums,3);
         System.out.println(result);
 	}
 }
