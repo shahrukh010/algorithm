@@ -93,8 +93,13 @@ public class Main{
 //        int[] nums = {2,3,-4};
 //        int[] nums = {8,-4,3,-5,4};
 
-        int[] nums = {3,-4,5,6,-8,7};
-        int result = array.maxCircularSubArray.apply(nums);
+//        int[] nums = {3,-4,5,6,-8,7};
+//       int result = array.maxCircularSubArray.apply(nums);
+
+//        int[] nums = {8,3,4,8,8};
+//        int[] nums = {3,7,4,7,7,5};
+        int[] nums  = {20,30,40,50,50,50,50};
+        int result = array.majorityElement.apply(nums);
         System.out.println(result);
 	}
 }

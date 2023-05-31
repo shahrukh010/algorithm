@@ -312,6 +312,43 @@ public class Array{
         return result;
     };
 
+    public Function<int[],Integer>majorityElement = (input)->{
+
+        int candidate = getCandidate(input,input[0]);
+        int count = 0;
+
+        for(int index = 0; index < input.length; index++){
+
+            if(candidate == input[index]){
+
+                count++;
+                if(count > input.length/2)
+                    return candidate;
+            }
+        }
+        return -1;
+    };
+
+    private int getCandidate(int[]input,int candidate ){
+
+        int count = 1;
+
+        for(int index = 1; index < input.length; index++){
+
+            if(candidate == input[index])
+                count++;
+            else{
+                count--;
+                if(count == 0){
+                    count = 1;
+                    candidate = input[index];
+                }
+            }
+        }
+
+        return candidate;
+    }
+
 
 
 	private void swap(int[]input,int low,int high){
