@@ -349,6 +349,24 @@ public class Array{
         return candidate;
     }
 
+    public Consumer<int[]> flip = (input)->{
+
+        //index is start from 1 because of we consider first value as flip group
+        for(int index = 1; index < input.length; index++){
+
+            if(input[index] !=input[index-1]){
+
+                if(input[index] !=input[0])//checking start index of flip
+                    System.out.print(index+",");
+                else
+                    System.out.println(index -1);//print end index of flip
+            }
+        }
+
+        if(input[input.length-1] !=input[0])
+            System.out.print(input.length-1);
+    };
+
 
 
 	private void swap(int[]input,int low,int high){

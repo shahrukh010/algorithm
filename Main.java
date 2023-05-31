@@ -98,8 +98,11 @@ public class Main{
 
 //        int[] nums = {8,3,4,8,8};
 //        int[] nums = {3,7,4,7,7,5};
-        int[] nums  = {20,30,40,50,50,50,50};
-        int result = array.majorityElement.apply(nums);
-        System.out.println(result);
+//        int[] nums  = {20,30,40,50,50,50,50};
+        int[] nums = {0,0,1,1,0,0,1,1,0,1};
+//        int result = array.majorityElement.apply(nums);
+ //       System.out.println(result);
+
+        array.flip.accept(nums);
 	}
 }
