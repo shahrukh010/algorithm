@@ -110,8 +110,13 @@ public class Main{
 //        int result = array.maxKConsecutiveSum.apply(nums,3);
 
 //        int[] nums = {1,8,30,-5,20,7};
-        int[]nums = {1,8,30,-5,20,7};
-        int result = array.maxConSum.apply(nums,3);
+//        int[]nums = {1,8,30,-5,20,7};
+//        int result = array.maxConSum.apply(nums,3);
+
+//        int[] nums = {1,4,20,3,10,5};
+//        int[] nums = {1,4,0,0,3,10,5};
+        int[] nums = {2,4};
+        boolean result = array.isSubArraySum.test(nums,3);
         System.out.println(result);
 	}
 }

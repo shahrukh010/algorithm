@@ -1,6 +1,7 @@
 package com.code.main;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.List;
 import java.util.ArrayList;
@@ -399,6 +400,20 @@ public class Array{
             }
             return result;
 
+    };
+
+    public BiPredicate<int[],Integer> isSubArraySum = (input,target)->{
+
+        for(int index = 0; index < input.length; index++){
+
+            int sum = input[index];
+            for(int j = index  +1; j <input.length; j++){
+
+                sum+=input[j];
+                if(sum==target)return true;
+            }
+        }
+        return false;
     };
 
 
