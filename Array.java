@@ -294,6 +294,24 @@ public class Array{
         return result;
     };
 
+    public Function<int[],Integer>maxCircularSubArray = (input)->{
+
+        int result = 0;
+
+        for(int index = 0; index < input.length; index++){
+
+                int currentMax = 0;
+
+            for(int j = 0; j < input.length; j++){
+
+                int pos = ((index + j) % input.length);
+                currentMax += input[pos];
+                result = Math.max(currentMax,result);
+            }
+        }
+        return result;
+    };
+
 
 
 	private void swap(int[]input,int low,int high){

@@ -86,8 +86,15 @@ public class Main{
 //        int[] nums = {10,12,14,7,8};
 //        int[] nums = {7,10,13,14};
 //        int[] nums = {10,12,8,4};
-        int[] nums = {5,10,20,6,3,8};
-        int result = array.maxLengthOddEven.apply(nums);
+//        int[] nums = {5,10,20,6,3,8};
+
+//        int result = array.maxLengthOddEven.apply(nums);
+//        int[] nums = {5,-2,3,4};
+//        int[] nums = {2,3,-4};
+//        int[] nums = {8,-4,3,-5,4};
+
+        int[] nums = {3,-4,5,6,-8,7};
+        int result = array.maxCircularSubArray.apply(nums);
         System.out.println(result);
 	}
 }
