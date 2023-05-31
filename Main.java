@@ -115,8 +115,11 @@ public class Main{
 
 //        int[] nums = {1,4,20,3,10,5};
 //        int[] nums = {1,4,0,0,3,10,5};
-        int[] nums = {2,4};
-        boolean result = array.isSubArraySum.test(nums,3);
+//        int[] nums = {2,4};
+//        boolean result = array.isSubArraySum.test(nums,3);
+//        int[] nums = {4,8,12,5};
+        int[] nums = {1,4,20,3,10,5};
+        boolean result = array.isSumExists.test(nums,33);
         System.out.println(result);
 	}
 }

@@ -415,6 +415,25 @@ public class Array{
         }
         return false;
     };
+    //efficent
+
+    public BiPredicate<int[],Integer> isSumExists = (input,target)->{
+
+        int current_sum = 0;
+        int pos = 0;
+
+        for(int index = 0; index < input.length; index++){
+
+            current_sum +=input[index];
+            while(current_sum > target){
+
+                current_sum -=input[pos];
+                pos++;
+            }
+            if(current_sum == target)return true;
+        }
+        return false;
+    };
 
 
 	private void swap(int[]input,int low,int high){
