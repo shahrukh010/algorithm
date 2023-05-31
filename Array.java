@@ -5,6 +5,7 @@ import java.util.function.Consumer;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.function.BiFunction;
 
 public class Array{
 
@@ -367,6 +368,21 @@ public class Array{
             System.out.print(input.length-1);
     };
 
+    public BiFunction<int[],Integer,Integer> maxKConsecutiveSum = (input,k)->{
+
+        int result = 0;
+
+        for(int index = 0; index + k -1 < input.length; index++){
+
+                int current = 0;
+            for(int j = 0 ;j < k; j++){
+
+                current +=input[index + j];
+            }
+            result = Math.max(current,result);
+        }
+        return result;
+    };
 
 
 	private void swap(int[]input,int low,int high){

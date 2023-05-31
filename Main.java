@@ -99,10 +99,15 @@ public class Main{
 //        int[] nums = {8,3,4,8,8};
 //        int[] nums = {3,7,4,7,7,5};
 //        int[] nums  = {20,30,40,50,50,50,50};
-        int[] nums = {0,0,1,1,0,0,1,1,0,1};
+//        int[] nums = {0,0,1,1,0,0,1,1,0,1};
 //        int result = array.majorityElement.apply(nums);
  //       System.out.println(result);
+//        array.flip.accept(nums);
 
-        array.flip.accept(nums);
+//        int[]nums = {1,8,30,-5,20,7};
+//        int[] nums = {5,-10,6,90,3};
+        int[] nums = {10,5,-2,20,1};
+        int result = array.maxKConsecutiveSum.apply(nums,3);
+        System.out.println(result);
 	}
 }
