@@ -81,8 +81,13 @@ public class Main{
 //           int[] nums = {1,-2,3,-1,2};
 //          int result = array.maxSumSubArray.apply(nums);
 //            int[] nums = {2,3,-8,7,-1,2,3};
-            int result = array.maxSubArraySum.apply(nums);
+//            int result = array.maxSubArraySum.apply(nums);
           
+//        int[] nums = {10,12,14,7,8};
+//        int[] nums = {7,10,13,14};
+//        int[] nums = {10,12,8,4};
+        int[] nums = {5,10,20,6,3,8};
+        int result = array.maxLengthOddEven.apply(nums);
         System.out.println(result);
 	}
 }

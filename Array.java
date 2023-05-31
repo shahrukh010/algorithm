@@ -276,6 +276,24 @@ public class Array{
         return max_so_far;
     };
 
+    public Function<int[],Integer> maxLengthOddEven = (input)->{
+
+        int result = 1;
+        int count = 1;
+
+        for(int index = 0; index < input.length-1; index++){
+
+            if(input[index] %2 ==0 && input[index+1] %2 !=0 ||
+               input[index+1] %2==0 && input[index] %2 !=0){
+
+                count++;
+                result = Math.max(result,count);
+               }
+            else count = 1;
+        }
+        return result;
+    };
+
 
 
 	private void swap(int[]input,int low,int high){
@@ -284,7 +302,5 @@ public class Array{
 			input[low] = input[high];
 			input[high] = tmp;
 	}
-
-	
 
 }
