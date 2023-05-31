@@ -436,6 +436,36 @@ public class Array{
     };
 
 
+
+    public BiFunction<Integer,Integer,Integer>prefixSum =(a,b)->{
+
+        int[] nums = {2,8,3,9,6,5,4};
+        int[] prefix = new int[nums.length];
+        prefix[0] = nums[0];
+
+        for(int index = 1; index < nums.length; index++){
+
+            prefix[index] = nums[index] + prefix[index-1];
+        }
+
+         class Sum{
+
+             public int getSum(int a,int b){
+
+                    if(a==0)return prefix[b];
+    
+                    else{
+                      int result = prefix[b] - prefix[a-1];  
+                    return result;
+                    }
+             }
+        }
+        Sum sum = new Sum();
+        int result = sum.getSum(a,b);
+        return result;
+  };
+
+
 	private void swap(int[]input,int low,int high){
 
 			int tmp = input[low];
