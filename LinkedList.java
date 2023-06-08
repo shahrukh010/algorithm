@@ -1,44 +1,63 @@
-package com.code.main;
+//package com.code.main;
+import java.util.List;
+import java.util.ArrayList;
 
-public class LinkedList {
+class Node<T> {
+
+    protected Node next;
+    protected T data;
+    public Node(T data){
+        this.data = data;
+        this.next = next;
+    }
+}
+
+public class LinkedList<T> {
+
+    private Node first;
+    private Node last;
+
+    public void add(T data){
+
+        Node<T> newNode = new Node(data);
+
+        if(this.first==null){
+            this.first = newNode;
+            this.last = this.first;
+        }
+        else{
+
+            this.last.next = newNode;
+            this.last = newNode;
+        }
+    }
+
+    @Override
+    public String toString(){
+
+        List<T> result = new ArrayList<>();
+        Node<T> current = this.first;
+        while(current !=null){
+
+            result.add(current.data);
+            current = current.next;
+        }
+        return result.toString();
+    }
 
 
-	class Node{
-		private int data;
-		private Node next;
+    public static void main(String[]args){
 
-		public Node(int data){
-			this.data = data;
-		}
-	}
+        LinkedList<Integer> list = new LinkedList();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        System.out.println(list);
 
-	private Node first= null;;
-	private Node last = null;
-
-	public void addNode(int value){
-
-		Node newNode = new Node(value);
-		
-		if(this.first == null){
-
-			this.first = newNode;
-			this.last = newNode;
-		}
-		else{
-			this.last.next = newNode;
-			this.last = this.last.next;
-
-		}
-	}
-
-	public void printNode(){
-
-		Node current = this.first;
-		while(current !=null){
-
-			System.out.print(current.data+",");
-			current = current.next;
-		}
-	}
-
+        LinkedList<String> string = new LinkedList<>();
+        string.add("annie");
+        string.add("hector");
+        string.add("bridget");
+        System.out.println(string);
+    }
 }
