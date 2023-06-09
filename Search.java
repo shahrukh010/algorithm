@@ -69,4 +69,14 @@ public class Search{
         return -1;
     };
 
+
+    public BiFunction<int[],Integer,Integer> countOccur = (input,target)->{
+
+
+        int last = lastIndex.apply(input,target);
+        int first = firstIndex.apply(input,target);
+
+        return  last==-1 && first == -1 ? 0: last - first+1;
+    };
+
 }
