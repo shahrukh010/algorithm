@@ -88,4 +88,36 @@ public class Search{
         return first == -1 ? 0 : input.length - first;
     };
 
+
+    public Function<Integer,Integer>sqroot = (input)->{
+
+        int x = 1;
+        while(x*x<=input)x++;
+
+        return x-1;
+    };
+
+    public Function<Integer,Integer>sqrt = (input)->{
+
+        int low =1;
+        int high = input;
+        int ans = -1;
+
+
+        while(low <=high){
+
+            int mid = ((low + high)/2);
+
+            int msq = mid*mid;
+
+            if(msq == input)return mid;
+
+            if(msq > input)high = mid-1;
+            else{
+                ans = mid;
+                low = mid+1;
+            }
+        }
+        return ans;
+    };
 }
