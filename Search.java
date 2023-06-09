@@ -1,6 +1,7 @@
 package com.code.main;
 import java.util.function.BiPredicate;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 public class Search{
 
@@ -77,6 +78,14 @@ public class Search{
         int first = firstIndex.apply(input,target);
 
         return  last==-1 && first == -1 ? 0: last - first+1;
+    };
+
+    public Function<int[],Integer>count1sSortedBinaryArray = (input)->{
+
+
+        int first = firstIndex.apply(input,1);
+
+        return first == -1 ? 0 : input.length - first;
     };
 
 }

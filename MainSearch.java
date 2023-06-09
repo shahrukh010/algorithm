@@ -14,10 +14,15 @@ public class MainSearch {
 //        int result = search.firstIndex.apply(nums,-1);
 //        int result = search.lastIndex.apply(nums,-1);
 
-        int[] nums = {10,20,20,20,30,30};
+//        int[] nums = {10,20,20,20,30,30};
 //        int[] nums = {10,10,10,10,10,10};
 //        int[] nums = {5,8,10};
-        int result = search.countOccur.apply(nums,30);
+//        int result = search.countOccur.apply(nums,30);
+
+        int[] nums = {0,0,1,1,1,1};
+//        int[] nums = {1,1,1,1,1,1};
+//        int[] nums = {0,0,0,0,0,0};
+        int result = search.count1sSortedBinaryArray.apply(nums);
         System.out.println(result);
 
 
