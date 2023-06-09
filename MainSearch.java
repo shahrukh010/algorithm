@@ -26,8 +26,10 @@ public class MainSearch {
 
 //        int result = search.sqroot.apply(25);
 //        int result = search.sqrt.apply(10);
-        int[]nums = {1,10,15,20,40,80,90,100,120,140};
-        int result = search.searchFromInfinit.apply(nums,90);
+//        int[]nums = {1,10,15,20,40,80,90,100,120,140};
+//        int result = search.searchFromInfinit.apply(nums,90);
+        int[] nums = {10,20,40,60,5,8};
+        int result = search.searchFromRotated.apply(nums,8);
         System.out.println(result);
         
 
