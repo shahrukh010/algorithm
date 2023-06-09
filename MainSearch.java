@@ -11,7 +11,8 @@ public class MainSearch {
 //        int[] nums = {10,15};
 //        int result = search.binarySearch.apply(nums,15);
         int[] nums = {1,10,10,10,20,20,40};
-        int result = search.firstIndex.apply(nums,-1);
+//        int result = search.firstIndex.apply(nums,-1);
+        int result = search.lastIndex.apply(nums,-1);
         System.out.println(result);
     }
 }
