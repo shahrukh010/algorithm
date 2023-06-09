@@ -19,13 +19,15 @@ public class MainSearch {
 //        int[] nums = {5,8,10};
 //        int result = search.countOccur.apply(nums,30);
 
-        int[] nums = {0,0,1,1,1,1};
+//        int[] nums = {0,0,1,1,1,1};
 //        int[] nums = {1,1,1,1,1,1};
 //        int[] nums = {0,0,0,0,0,0};
 //        int result = search.count1sSortedBinaryArray.apply(nums);
 
 //        int result = search.sqroot.apply(25);
-        int result = search.sqrt.apply(10);
+//        int result = search.sqrt.apply(10);
+        int[]nums = {1,10,15,20,40,80,90,100,120,140};
+        int result = search.searchFromInfinit.apply(nums,90);
         System.out.println(result);
         
 

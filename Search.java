@@ -120,4 +120,32 @@ public class Search{
         }
         return ans;
     };
+
+    private int binary(int[]input,int low,int high,int target){
+
+        while(low<=high){
+
+            int mid = ((low + high)/2);
+
+            if(input[mid] == target)return input[mid];
+
+            if(input[mid] < target)low = mid+1;
+            else high = mid-1;
+        }
+        return -1;
+    }
+
+
+    public BiFunction<int[],Integer,Integer> searchFromInfinit=(input,target)->{
+
+        int x = 1;
+
+        while(input[x]<=target){
+
+            if(input[x]==target)return input[x];
+            x = x * 2;
+        }
+        int result = binary(input,((x/2)+1),x,target);
+        return result;
+    };
 }
