@@ -33,9 +33,9 @@ public class MainSearch {
 //        int[] nums = {2,4,8,9,11,12,20,30};
 //        int[] nums = {2,5,8,12,30};
 //        boolean result = search.pairExist.test(nums,17);
-//        int[] nums = {2,3,4,8,9,20,40};
-        int[] nums = {1,2,5,6};
-        boolean result = search.triplet.test(nums,14);
+        int[] nums = {2,3,4,8,9,20,40};
+//        int[] nums = {1,2,5,6};
+        boolean result = search.isTriplet.test(nums,32);
         System.out.println(result);
         
 

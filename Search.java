@@ -205,4 +205,23 @@ public class Search{
         
     };
 
+    public BiPredicate<int[],Integer> isTriplet = (input,target)->{
+
+        for(int index = 0; index < input.length; index++){
+
+            int left = index+1;
+            int right=input.length-1;
+            int ntf = target - input[index];
+
+            while(left < right){
+
+                int sum = input[left] + input[right];
+                if(sum == ntf)return true;
+
+                if(sum > ntf)right--;
+                else left++;
+            }
+        }
+        return false;
+    };
 }
