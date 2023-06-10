@@ -34,6 +34,30 @@ public class LinkedList<T>{
         }
     }
 
+    public Node getHead(){
+
+        return this.first;
+    }
+
+    public LinkedList<T> middle(Node head){
+
+        Node<T> slow = head;
+        Node<T> fast = head;
+        LinkedList<T> res = new LinkedList();
+
+        while(fast !=null && fast.next !=null){
+
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        while(slow !=null){
+        res.add(slow.data);
+        slow = slow.next;
+        }
+        return res;
+
+    }
+
     public void reverse(){
 
         Node r = null;
