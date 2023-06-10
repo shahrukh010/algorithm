@@ -2,6 +2,7 @@ package com.code.main;
 import java.util.function.BiPredicate;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.Arrays;
 
 public class Search{
 
@@ -223,5 +224,31 @@ public class Search{
             }
         }
         return false;
+    };
+
+    public BiFunction<int[],int[],Integer>median = (arr1,arr2)->{
+
+        int[] array = new int[arr1.length + arr2.length];
+        int k = 0;
+
+        for(int index =0; index <arr1.length;index++)
+            array[k++] = arr1[index];
+
+        for(int index =0; index<arr2.length;index++)
+            array[k++] = arr2[index];
+
+        Arrays.sort(array);
+
+        int n = array.length;
+        int mid = 0;
+        if(n%2==0){
+
+            int index = (n/2);
+            mid = ((array[index] + array[index-1])/2);
+            return mid;
+        }
+        else{
+            return array[n/2];
+        }
     };
 }

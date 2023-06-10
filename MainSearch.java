@@ -33,12 +33,17 @@ public class MainSearch {
 //        int[] nums = {2,4,8,9,11,12,20,30};
 //        int[] nums = {2,5,8,12,30};
 //        boolean result = search.pairExist.test(nums,17);
-        int[] nums = {2,3,4,8,9,20,40};
+//        int[] nums = {2,3,4,8,9,20,40};
 //        int[] nums = {1,2,5,6};
-        boolean result = search.isTriplet.test(nums,32);
+//        boolean result = search.isTriplet.test(nums,32);
+
+//        int[] arr1 = {10,20,30,40,50};
+//        int[] arr2 = {5,15,25,35,45};
+//        int[] arr1 = {1,2,3,4,5,6};
+//        int[] arr2 = {10,20,30,40,50};
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {10,20,30,40,50,60};
+        int result = search.median.apply(arr1,arr2);
         System.out.println(result);
-        
-
-
     }
 }
