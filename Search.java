@@ -174,5 +174,19 @@ public class Search{
         return -1;
     };
 
+    public BiPredicate<int[],Integer>pairExist = (input,target)->{
+
+        int left = 0;
+        int right= input.length-1;
+
+        while(left<right){
+
+            if(input[left] + input[right] == target)return true;
+
+            if(input[left] + input[right] < target)left++;
+            else right--;
+        }
+        return false;
+    };
 
 }

@@ -28,8 +28,11 @@ public class MainSearch {
 //        int result = search.sqrt.apply(10);
 //        int[]nums = {1,10,15,20,40,80,90,100,120,140};
 //        int result = search.searchFromInfinit.apply(nums,90);
-        int[] nums = {10,20,40,60,5,8};
-        int result = search.searchFromRotated.apply(nums,8);
+//        int[] nums = {10,20,40,60,5,8};
+//        int result = search.searchFromRotated.apply(nums,8);
+//        int[] nums = {2,4,8,9,11,12,20,30};
+        int[] nums = {2,5,8,12,30};
+        boolean result = search.pairExist.test(nums,17);
         System.out.println(result);
         
 
