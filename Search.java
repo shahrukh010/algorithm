@@ -245,10 +245,10 @@ public class Search{
 
             int index = (n/2);
             mid = ((array[index] + array[index-1])/2);
-            return mid;
+            return mid;//it is returning sum/2 result of two data  not index of data
         }
         else{
-            return array[n/2];
+            return array[n/2];//if odd then return index of data;
         }
     };
 }

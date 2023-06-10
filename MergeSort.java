@@ -1,60 +1,54 @@
 
+public class MergeSort {
 
 
+    private static void merge(int[]nums,int low,int mid,int high){
 
-public class MergeSort{
 
-private void merge(int[]input,int low,int mid,int high){
+        int left = low;
+        int right=mid+1;
+        int index = low;
 
-    int i = low;
-    int j = mid+1;
-    int k = low;
+        int[]merge = new int[nums.length];
 
-    int[] merge = new int[input.length];
-    while(i<=mid && j <= high){
+        while(left<=mid && right<=high){
 
-        if(input[i] < input[j])
-            merge[k++] = input[i++];
-        else
-            merge[k++] = input[j++];
+            if(nums[left]<nums[right]){
+
+                merge[index++] = nums[left++];
+            }
+            else
+                merge[index++] = nums[right++];
+        }
+
+        for(;left<=mid; left++)
+            merge[index++] =nums[left];
+
+        for(;right<=high;right++)
+            merge[index++] = nums[right];
+
+        for(int i = low; i <=high;i++)
+            nums[i] = merge[i];
     }
 
-    for(;i<=mid;i++)
-        merge[k++] = input[i];
-    for(;j<=high;j++)
-        merge[k++] = input[j];
-
-
-    for(int index =low;index<=high;index++){
-
-        //till not sorted element inserted from new array to old array
-        input[index] = merge[index];
-    } 
-}
-
-
-    public void mergeSort(int[]input,int low,int high){
+    public static void mergeSort(int[]input,int low, int high){
 
         if(low < high){
 
             int mid = ((low + high)/2);
-
             mergeSort(input,low,mid);
             mergeSort(input,mid+1,high);
+
             merge(input,low,mid,high);
         }
     }
 
 
-public static void main(String...strings){
+    public static void main(String...strings){
 
 
-    MergeSort merge = new MergeSort();
-    int[] nums = {5,3,1,2,4};
-    merge.mergeSort(nums,0,nums.length-1);
-    System.out.println(java.util.Arrays.toString(nums));
+        int[] nums = {5,6,2,3,4,5,7,8,9,1,10};
+        mergeSort(nums,0,nums.length-1);
+        System.out.println(java.util.Arrays.toString(nums));
+    }
 }
-}
-
-
-
