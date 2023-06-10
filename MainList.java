@@ -11,9 +11,13 @@ public class MainList {
         list.add(30);
         list.add(40);
         System.out.println(list);
+        list.reverse();
+        System.out.println(list);
         LinkedList<String>list1 = new LinkedList<>();
         list1.add("annie");
         list1.add("hector");
+        System.out.println(list1);
+        list1.reverse();
         System.out.println(list1);
     }
 }

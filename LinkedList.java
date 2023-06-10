@@ -34,6 +34,21 @@ public class LinkedList<T>{
         }
     }
 
+    public void reverse(){
+
+        Node r = null;
+        Node q = null;
+        Node p = this.first;
+        while(p !=null){
+
+            r=q;
+            q=p;
+            p=p.next;
+            q.next = r;
+        }
+        this.first = q;
+    }
+
     @Override
     public String toString(){
 
