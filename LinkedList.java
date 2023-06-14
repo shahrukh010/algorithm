@@ -58,6 +58,7 @@ public class LinkedList<T>{
 
     }
 
+
     public void reverse(){
 
         Node r = null;
