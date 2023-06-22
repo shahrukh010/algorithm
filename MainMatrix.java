@@ -28,5 +28,10 @@ public class MainMatrix{
 
             System.out.println(java.util.Arrays.toString(print));
         }
+
+
+        int[] nums = {5,2,1,0,3,4};
+        matrix.mergeSort(nums,0,nums.length-1);
+        System.out.println(java.util.Arrays.toString(nums));
     }
 }
