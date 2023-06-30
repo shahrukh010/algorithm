@@ -82,6 +82,29 @@ public class HashMap<K,V>{
         return Math.abs(hashCode % buckets.size());
     }
 
+
+    public V remove(K key){
+
+        int index = getIndex(key);
+
+        LinkedList<KeyPairValue<K,V>> bucket = buckets.get(index);
+        if(bucket ==null){
+
+            throw new IllegalArgumentException("key does not valued");
+        }
+
+        for(KeyPairValue<K,V> entry : bucket){
+
+            if(entry.getKey().equals(key)){
+
+                bucket.remove(entry);
+
+                return entry.getValue();
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString(){
 
@@ -120,6 +143,9 @@ public class HashMap<K,V>{
         map.put(4,"nic");
         map.put(4,"Alex");
 
+//        String value = map.remove(4);
+        String value = map.remove(10);
         System.out.println(map);
+        System.out.println(value);
     }
 }
