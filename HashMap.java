@@ -105,6 +105,10 @@ public class HashMap<K,V>{
         return null;
     }
 
+    public boolean contains(K key){
+
+    }
+
     @Override
     public String toString(){
 
