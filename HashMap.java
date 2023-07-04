@@ -107,6 +107,18 @@ public class HashMap<K,V>{
 
     public boolean contains(K key){
 
+
+        int index = getIndex(key);
+        LinkedList<KeyPairValue<K,V>> bucket = buckets.get(index);
+        if(bucket ==null){
+
+            throw new IllegalArgumentException("not key found");
+        }
+        for(KeyPairValue<K,V> entry: bucket){
+
+            if(entry.getKey().equals(key))return true;
+        }
+        return false;
     }
 
     @Override
@@ -148,8 +160,10 @@ public class HashMap<K,V>{
         map.put(4,"Alex");
 
 //        String value = map.remove(4);
-        String value = map.remove(10);
+//        String value = map.remove(10);
         System.out.println(map);
-        System.out.println(value);
+//        System.out.println(value);
+
+        System.out.println(map.contains(11));
     }
 }
