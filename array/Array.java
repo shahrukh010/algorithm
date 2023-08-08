@@ -103,6 +103,20 @@ public class Array {
         return merge;
     }
 
+    public void multipleMissingElement(int[]input){
 
+        int res = input[0];
 
+        for(int index = 1; index < input.length; index++){
+
+            if(res !=input[index] - index){
+
+                while(res <input[index] - index){
+                    int miss = res + index;
+                    System.out.println(miss);
+                    res++;
+            }
+        }
+    }
+    }
 }

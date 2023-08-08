@@ -22,7 +22,10 @@ public class Main {
 
         int[] a = {3,8,16,20,25};
         int[] b = {4,10,12,22,23,25};
-        int[] result = array.mergeArray(a,b);
-        System.out.println(Arrays.toString(result));
+//        int[] result = array.mergeArray(a,b);
+
+        int[] input ={6,7,8,9,11,12,15,16,17,18,19}; 
+        array.multipleMissingElement(input);
+//      System.out.println(Arrays.toString(result));
     }
 }
