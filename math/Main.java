@@ -22,9 +22,16 @@ public class Main{
 //        int res = math.gcd.apply(12,15);
 //        System.out.println(res);
 
-        int res = math.lcm.apply(3,7);
+//        int res = math.lcm.apply(3,7);
+//        System.out.println(res);
+
+//        boolean res = math.isPrime.test(89);
+//        System.out.println(res);
+
+        boolean res = math.prime.test(97);
         System.out.println(res);
     }
+
 
 
     

@@ -72,5 +72,27 @@ public class Mathmatics {
         while(res % a !=0 || res % b !=0)res++;
         return res;
     };
+
+    public Predicate<Integer> isPrime = (n)->{
+
+        
+        for(int i = 2; i*i<=n; i++){
+
+            if( n%i ==0)return false;
+        }
+        return true;
+    };
+
+    public Predicate<Integer>prime =(n)->{
+
+        if(n % 2==0 || n%3==0)return true;
+
+        for(int index = 5; index*index <=n; index++){
+
+            if(n % index==0)return false;
+        }
+        return true;
+    };
+    
 }
 
