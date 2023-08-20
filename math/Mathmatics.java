@@ -41,4 +41,17 @@ public class Mathmatics {
         }
         return res;
     };
+
+
+    public Function<Integer,Integer>trailingZero = (n)->{
+
+
+        int currentResult = 0;
+        for(int index = 5; index<=n; index = index*5){
+
+            currentResult += n / index;
+        }
+        return currentResult;
+    };
 }
+

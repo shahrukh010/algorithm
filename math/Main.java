@@ -13,7 +13,11 @@ public class Main{
 //        boolean res = math.isPalindrome.test(367);
 //        System.out.println(res);
 
-        int res = math.factorial.apply(0);
+//        int res = math.factorial.apply(0);
+//        System.out.println(res);
+
+        int res = math.trailingZero.apply(20);
         System.out.println(res);
     }
+    
 }
