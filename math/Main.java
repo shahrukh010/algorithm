@@ -16,7 +16,10 @@ public class Main{
 //        int res = math.factorial.apply(0);
 //        System.out.println(res);
 
-        int res = math.trailingZero.apply(20);
+//        int res = math.trailingZero.apply(20);
+//        System.out.println(res);
+
+        int res = math.gcd.apply(12,15);
         System.out.println(res);
     }
     

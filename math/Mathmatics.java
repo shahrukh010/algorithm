@@ -1,6 +1,7 @@
 package com.code.math;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.BiFunction;
 
 public class Mathmatics {
 
@@ -52,6 +53,15 @@ public class Mathmatics {
             currentResult += n / index;
         }
         return currentResult;
+    };
+
+    public BiFunction<Integer,Integer,Integer> gcd = (a,b)->{
+
+        int q = Math.min(a,b);
+
+        while( (a % q !=0 || b % q !=0))q--;
+        return q;
+                
     };
 }
 
