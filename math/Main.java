@@ -7,7 +7,10 @@ public class Main{
 
         Mathmatics math = new Mathmatics();
 
-        int res = math.countDigit.apply(7);
+//        int res = math.countDigit.apply(7);
+//`        System.out.println(res);
+
+        boolean res = math.isPalindrome.test(367);
         System.out.println(res);
     }
 }
