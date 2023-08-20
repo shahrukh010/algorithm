@@ -30,4 +30,15 @@ public class Mathmatics {
         }
         return res == n;
     };
+
+    public Function<Integer,Integer> factorial = (n)->{
+
+        int res = 1;
+        while(n !=1 && n !=0){
+
+            res = res * n;
+            n--;
+        }
+        return res;
+    };
 }
