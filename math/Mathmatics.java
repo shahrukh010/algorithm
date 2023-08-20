@@ -63,5 +63,14 @@ public class Mathmatics {
         return q;
                 
     };
+
+    public BiFunction<Integer,Integer,Integer> lcm = (a,b)->{
+
+
+        int res = Math.max(a,b);
+
+        while(res % a !=0 || res % b !=0)res++;
+        return res;
+    };
 }
 

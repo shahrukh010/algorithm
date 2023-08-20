@@ -19,8 +19,13 @@ public class Main{
 //        int res = math.trailingZero.apply(20);
 //        System.out.println(res);
 
-        int res = math.gcd.apply(12,15);
+//        int res = math.gcd.apply(12,15);
+//        System.out.println(res);
+
+        int res = math.lcm.apply(3,7);
         System.out.println(res);
     }
+
+
     
 }
