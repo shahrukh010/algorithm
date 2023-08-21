@@ -4,6 +4,8 @@ import java.util.function.Function;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.function.Consumer;
+import java.util.Map;
 
 public class Array {
 
@@ -210,6 +212,38 @@ public class Array {
             min_so_far = Math.min(input[index],min_so_far);
         }
         return res;
+    };
+
+
+    public Consumer<int[]> frequency = (input)->{
+
+        java.util.Map<Integer,Integer> map = new java.util.HashMap<>();
+
+        for(int index = 0; index < input.length; index++){
+
+            if(map.containsKey(input[index])){
+
+                map.put(input[index],map.getOrDefault(input[index],0)+1);
+            }
+            else
+                map.put(input[index],1);
+        }
+
+        //Iterate using entrySet
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+
+            System.out.println(entry.getKey()+"-->"+entry.getValue());
+        }
+
+        //iterate using keySet
+
+        for(Integer key : map.keySet()){
+
+            System.out.println(key+"-->"+map.get(key));
+        }
+
+        //Iterate using values
+        for(Integer value : map.values())System.out.println(value);
     };
 
 

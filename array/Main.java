@@ -44,8 +44,11 @@ public class Main {
 //        System.out.println(Arrays.toString(result));
 
 //        int[] input = {2,3,10,6,4,8,1};
-        int[] input = {7,9,5,6,3,2};
-        int result = array.maxDiff.apply(input);
-        System.out.println(result);
+//        int[] input = {7,9,5,6,3,2};
+//        int result = array.maxDiff.apply(input);
+//        System.out.println(result);
+
+        int[] input = {10,10,10,25,30,30,56,};
+        array.frequency.accept(input);
     }
 }
