@@ -119,4 +119,32 @@ public class Array {
         }
     }
     }
+
+
+    public Function<int[],Integer> secondMax = (input)->{
+
+
+        int large = 0;
+        int res = -1;
+
+        for(int index = 1; index < input.length; index++){
+
+            if(input[index] > input[large]){
+
+                res = large;
+                large = index;
+            }
+            else if(input[index] !=input[large]){
+
+                if(res == -1 || input[index] > input[res]) res = index;
+            }
+        }
+
+        return res==-1 ? 1 : input[res];
+    };
+
+
+
+
+
 }

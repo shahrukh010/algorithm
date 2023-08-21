@@ -24,8 +24,13 @@ public class Main {
         int[] b = {4,10,12,22,23,25};
 //        int[] result = array.mergeArray(a,b);
 
-        int[] input ={6,7,8,9,11,12,15,16,17,18,19}; 
-        array.multipleMissingElement(input);
+//        int[] input ={6,7,8,9,11,12,15,16,17,18,19}; 
+//       array.multipleMissingElement(input);
 //      System.out.println(Arrays.toString(result));
+
+//        int[] input = {20,10,20,8,12};
+        int[] input = {10,5,8,7};
+        int result = array.secondMax.apply(input);
+        System.out.println(result);
     }
 }
