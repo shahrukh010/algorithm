@@ -144,6 +144,28 @@ public class Array {
     };
 
 
+    public Function<int[],int[]> removeDuplicate = (input)->{
+
+
+        java.util.Arrays.sort(input);
+
+        int i = 0;
+        int j = 1;
+
+        while(j<input.length){
+
+            if(input[j] !=input[j-1]){
+
+                input[i+1] = input[j];
+                i++;
+            }
+            j++;
+        }
+
+        return Arrays.copyOfRange(input,0,i+1);
+
+    };
+
 
 
 

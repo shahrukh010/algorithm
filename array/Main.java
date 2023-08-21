@@ -29,8 +29,13 @@ public class Main {
 //      System.out.println(Arrays.toString(result));
 
 //        int[] input = {20,10,20,8,12};
-        int[] input = {10,5,8,7};
-        int result = array.secondMax.apply(input);
-        System.out.println(result);
+//        int[] input = {10,5,8,7};
+//        int result = array.secondMax.apply(input);
+
+//        int[] input = {10,20,20,20,30,30,30};
+//        int[] input = {10,20,20,20,30,30,30,40,40,50,60,60};
+        int[] input = {5,1,2,1,5,3,4,5,3,0};
+        int[] result = array.removeDuplicate.apply(input);
+        System.out.println(Arrays.toString(result));
     }
 }
