@@ -112,6 +112,47 @@ public class Mathmatics {
             }
         }
     };
+    public Consumer<Integer>allDivisor = (n)->{
+
+
+        int i = 1;
+        for(;i*i<=n;i++){
+
+            if(n%i==0)System.out.print(i+",");
+        }
+
+        for(;i>0;i--){
+            
+            if(n%i==0 && i !=1)System.out.print(n/i+",");
+            else if(i==1) System.out.print(n/i);
+        }
+    };
+
+    public Consumer<Integer>allPrime = (n)->{
+
+
+        boolean[] flag = new boolean[n+1];
+
+        for(int i = 2; i*i<=n; i++){
+
+            if(isPrime.test(2)){
+
+                int x = i;
+
+                while( i * x <=n){
+                    flag[i*x] = true;
+                    x++;
+                }
+            }
+        }
+
+        for(int index = 2; index<flag.length;index++){
+
+            if(!flag[index])System.out.print(index+",");
+        }
+    };
+
+
     
 }
 

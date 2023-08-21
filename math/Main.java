@@ -31,8 +31,13 @@ public class Main{
 //        boolean res = math.prime.test(97);
 //        System.out.println(res);
 
-        math.primeFactor.accept(450);
+//        math.primeFactor.accept(450);
+
+//        math.allDivisor.accept(6);
+
+        math.allPrime.accept(16);
     }
+
 
 
 
