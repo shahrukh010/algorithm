@@ -37,8 +37,10 @@ public class Main {
 //        int[] input = {5,1,2,1,5,3,4,5,3,0};
 //        int[] result = array.removeDuplicate.apply(input);
 
-        int[] input = {8,5,0,0,10,0,20};
-        int result[] = array.moveZeroEnd.apply(input);
+//        int[] input = {8,5,0,0,10,0,20};
+//        int result[] = array.moveZeroEnd.apply(input);
+        int[] input = {7,10,4,3,6,5,2};
+        int[] result = array.leader.apply(input);
         System.out.println(Arrays.toString(result));
     }
 }

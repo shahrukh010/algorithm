@@ -2,6 +2,9 @@ package com.code.array;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Array {
 
     public BiPredicate<int[],Integer> binarySearch = (input,target)->{
@@ -180,6 +183,21 @@ public class Array {
 
     };
 
+    public Function<int[],int[]>leader = (input)->{
+
+        int currentLeader = input[input.length-1];
+        List<Integer> result = new ArrayList<>();
+        result.add(currentLeader);
+
+        for(int index=input.length-2; index>=0;index--){
+
+            if(input[index] > currentLeader){
+                result.add(input[index]);
+                currentLeader = input[index];
+            }
+        }
+        return result.stream().mapToInt(Integer::intValue).toArray();
+    };
 
 
 
