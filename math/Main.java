@@ -35,7 +35,9 @@ public class Main{
 
 //        math.allDivisor.accept(6);
 
-        math.allPrime.accept(16);
+//        math.allPrime.accept(16);
+
+        System.out.println(math.pow(5,1));
     }
 
 

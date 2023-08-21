@@ -153,6 +153,18 @@ public class Mathmatics {
     };
 
 
+    public int pow(int x, int n){
+
+
+        if(n==0)return 1;
+        int tmp = x;
+        for(int index = 1; index<n;index++){
+
+            x = x*tmp;
+        }
+        return x;
+    }
+
     
 }
 
