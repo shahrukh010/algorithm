@@ -166,6 +166,20 @@ public class Array {
 
     };
 
+    public Function<int[],int[]>moveZeroEnd = (input)->{
+
+        int i = 0;
+        int j = 0;
+
+        while(j<input.length){
+
+            if(input[j] !=0)swap(input,i++,j);
+            j++;
+        }
+        return Arrays.copyOfRange(input,0,input.length);
+
+    };
+
 
 
 
