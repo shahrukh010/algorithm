@@ -39,8 +39,13 @@ public class Main {
 
 //        int[] input = {8,5,0,0,10,0,20};
 //        int result[] = array.moveZeroEnd.apply(input);
-        int[] input = {7,10,4,3,6,5,2};
-        int[] result = array.leader.apply(input);
-        System.out.println(Arrays.toString(result));
+//        int[] input = {7,10,4,3,6,5,2};
+//        int[] result = array.leader.apply(input);
+//        System.out.println(Arrays.toString(result));
+
+//        int[] input = {2,3,10,6,4,8,1};
+        int[] input = {7,9,5,6,3,2};
+        int result = array.maxDiff.apply(input);
+        System.out.println(result);
     }
 }

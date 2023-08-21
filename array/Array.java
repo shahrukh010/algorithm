@@ -199,6 +199,19 @@ public class Array {
         return result.stream().mapToInt(Integer::intValue).toArray();
     };
 
+    public Function<int[],Integer>maxDiff = (input)->{
+
+        int res = input[1] - input[0];
+        int min_so_far = input[0];
+
+        for(int index = 1; index < input.length; index++){
+
+            res = Math.max(res,input[index] - min_so_far);
+            min_so_far = Math.min(input[index],min_so_far);
+        }
+        return res;
+    };
+
 
 
 }
