@@ -257,6 +257,24 @@ public class Array {
         return profit;
     }
 
+    public int maxConsecutiveOnes(int[]input){
+
+        int res = 0;
+        int count = 0;
+
+        for(int index = 0; index < input.length; index++){
+
+            if(input[index] !=0){
+
+                count++;
+                res = Math.max(res,count);
+            } 
+            else count = 0;
+        }
+            return res;
+
+    }
+
 
 
 }

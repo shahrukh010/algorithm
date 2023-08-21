@@ -53,8 +53,10 @@ public class Main {
 
 //        int[] input = {1,5,3,8,12};
 //        int[] input = {10,20,30};
-        int[] input = {1,5,3,1,2,8};
-        int result = array.maxProfit(input);
+//        int[] input = {1,5,3,1,2,8};
+//        int result = array.maxProfit(input);
+        int[] input = {0,1,1,0,1,1,1,0,1,1};
+        int result = array.maxConsecutiveOnes(input);
         System.out.println(result);
     }
 }
