@@ -246,6 +246,17 @@ public class Array {
         for(Integer value : map.values())System.out.println(value);
     };
 
+    public int maxProfit(int[]input){
+
+        int profit = 0;
+        for(int index = 1; index<input.length; index++){
+
+            if(input[index] > input[index-1])
+            profit +=input[index] - input[index-1];
+        }
+        return profit;
+    }
+
 
 
 }

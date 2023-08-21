@@ -48,7 +48,13 @@ public class Main {
 //        int result = array.maxDiff.apply(input);
 //        System.out.println(result);
 
-        int[] input = {10,10,10,25,30,30,56,};
-        array.frequency.accept(input);
+//        int[] input = {10,10,10,25,30,30,56,};
+//        array.frequency.accept(input);
+
+//        int[] input = {1,5,3,8,12};
+//        int[] input = {10,20,30};
+        int[] input = {1,5,3,1,2,8};
+        int result = array.maxProfit(input);
+        System.out.println(result);
     }
 }
