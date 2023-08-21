@@ -28,8 +28,10 @@ public class Main{
 //        boolean res = math.isPrime.test(89);
 //        System.out.println(res);
 
-        boolean res = math.prime.test(97);
-        System.out.println(res);
+//        boolean res = math.prime.test(97);
+//        System.out.println(res);
+
+        math.primeFactor.accept(450);
     }
 
 

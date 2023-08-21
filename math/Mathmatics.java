@@ -2,6 +2,7 @@ package com.code.math;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 
 public class Mathmatics {
 
@@ -92,6 +93,24 @@ public class Mathmatics {
             if(n % index==0)return false;
         }
         return true;
+    };
+
+    public Consumer<Integer> primeFactor = (n)->{
+
+
+        for(int i = 2; i*i<=n; i++){
+
+            if(isPrime.test(i)){
+
+                int x = i;
+
+                while(n%x==0){
+
+                    System.out.print(i+",");
+                    x = x*i;
+                }
+            }
+        }
     };
     
 }
