@@ -67,7 +67,8 @@ public class Main {
 //        int[] input = {5,8,3};
 //        int[] input = {-6,-1,-8};
         int[] input = {-3,8,-2,4,-5,6};
-        int result = array.maxSubSum(input);
+//        int result = array.maxSubSum(input);
+        int result = array.maxSumSubArray(input);
         System.out.println(result);
 
     }

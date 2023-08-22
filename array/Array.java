@@ -315,4 +315,17 @@ public class Array {
         }
         return result;
     }
+
+    public int maxSumSubArray(int[]input){
+
+        int currentMax = input[0];
+        int max_so_far = input[0];
+
+        for(int index = 1; index < input.length; index++){
+
+            currentMax  = Math.max(input[index] + currentMax,input[index]);
+            max_so_far = Math.max(currentMax,max_so_far);
+        }
+        return max_so_far;
+    }
 }
