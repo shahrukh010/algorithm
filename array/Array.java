@@ -328,4 +328,22 @@ public class Array {
         }
         return max_so_far;
     }
+
+    public int maxEvenOddLength(int[] input){
+
+        int count = 1;
+        int result = 0;
+
+        for(int index = 1; index < input.length; index++){
+
+            if((input[index] %2==0 && input[index-1] %2 !=0)|| 
+               (input[index] %2!=0 && input[index-1] %2==0)){
+
+                count++;
+                result  =Math.max(result,count);
+               }
+            else count = 1;
+        }
+        return Math.max(result,count);
+    }
 }

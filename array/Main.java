@@ -66,9 +66,14 @@ public class Main {
 //        int[] input = {2,3,-8,7,-1,2,3};
 //        int[] input = {5,8,3};
 //        int[] input = {-6,-1,-8};
-        int[] input = {-3,8,-2,4,-5,6};
+//        int[] input = {-3,8,-2,4,-5,6};
 //        int result = array.maxSubSum(input);
-        int result = array.maxSumSubArray(input);
+//        int result = array.maxSumSubArray(input);
+        int[] input = {10,12,14,7,8};
+//        int[] input = {5,10,20,6,3,8};
+//        int[] input = {7,10,13,14};
+//        int[] input = {10,12,8};
+        int result = array.maxEvenOddLength(input);
         System.out.println(result);
 
     }
