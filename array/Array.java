@@ -297,6 +297,22 @@ public class Array {
         return result;
     }
 
+    public int maxSubSum(int[]input){
 
+        int result = Integer.MIN_VALUE;
 
+        for(int index = 0; index < input.length; index++){
+
+            int currentSum = input[index];
+            int currentMax = input[index];
+            
+            for(int j = index+1; j < input.length; j++){
+
+                currentSum +=input[j];
+                currentMax =Math.max(currentSum,currentMax);
+            }
+            result = Math.max(result,currentMax);
+        }
+        return result;
+    }
 }
