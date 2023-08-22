@@ -272,7 +272,29 @@ public class Array {
             else count = 0;
         }
             return res;
+    }
 
+    public int mostWater(int[]input){
+
+        int result = 0;
+
+        for(int index = 1; index < input.length-1; index++){
+
+            int leftMax = input[index];
+            for(int j = index; j>=0; j--){
+
+                leftMax = Math.max(input[j],leftMax);
+            }
+
+            int rightMax = input[index];
+
+            for(int k = index+1; k<input.length;k++)
+                rightMax = Math.max(input[k],rightMax);
+
+            result +=((Math.min(leftMax,rightMax))-input[index]);
+
+        }
+        return result;
     }
 
 

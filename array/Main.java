@@ -55,8 +55,14 @@ public class Main {
 //        int[] input = {10,20,30};
 //        int[] input = {1,5,3,1,2,8};
 //        int result = array.maxProfit(input);
-        int[] input = {0,1,1,0,1,1,1,0,1,1};
-        int result = array.maxConsecutiveOnes(input);
+//        int[] input = {0,1,1,0,1,1,1,0,1,1};
+//        int result = array.maxConsecutiveOnes(input);
+        int[] input = {5,0,6,2,3};
+//        int[] input = {3,0,1,2,5};
+//        int[] input = {2,0,2};
+//        int[] input = {0,1,0,2,1,0,1,3,2,1,2,1};
+        int result = array.mostWater(input);
         System.out.println(result);
+
     }
 }
